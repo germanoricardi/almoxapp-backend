@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "AlmoxApp",
+    "description": "Sistema moderno de gestão de estoque para organizar, controlar e otimizar operações de almoxarifado."
+  },
+  "modules": {
+    "auth": {
+      "invalidCredentials": "E-mail ou senha inválidos",
+      "invalidOrExpiredToken": "Token inválido ou expirado",
+      "requestPasswordNotice": "Se o usuário existir, um e-mail será enviado com instruções.",
+      "resetPasswordSuccess": "Senha redefinida com sucesso. Você pode fazer login com a nova senha.",
+      "tokenExpired": "Token expirado, faça o login novamente",
+      "userNotFound": "Usuário não encontrado",
+      "userNotIdentified": "Usuário não identificado, faça o login novamente",
+      "requestPasswordEmailStructure": {
+        "subject": "Recuperação de Senha",
+        "text": "Você solicitou uma nova senha. Acesse o link para redefinir: {resetUrl}",
+        "html": "<p>Você solicitou uma nova senha.</p><p>Para redefinir a senha, clique no link <a href='{resetUrl}'>{resetUrl}</a></p>"
+      }
+    }
+  }
+}
