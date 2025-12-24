@@ -19,7 +19,17 @@ export class AuthController {
   @HttpCode(HttpStatus.OK)
   async login(@Body() loginDto: LoginDto) {
     const user = await this.authService.validateUser(loginDto);
-    return this.authService.login(user);
+    const { access_token, refresh_token } = await this.authService.login(user);
+
+    return {
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+      },
+      access_token,
+      refresh_token
+    }
   }
 
   @Public()
